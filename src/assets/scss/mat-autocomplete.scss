@@ -1,0 +1,60 @@
+mat-form-field.customized_mat_autocomplete {
+  display: flex;
+  flex: auto;
+  justify-content: start;
+  align-items: center;
+
+  &.mat-focused {
+    .mat-form-field-ripple {
+      height: 0;
+      background-color: none;
+    }
+  }
+
+  .mat-form-field-wrapper {
+    width: 100%;
+    padding: 0;
+
+    .mat-form-field-underline {
+      height: 0 !important;
+    }
+
+    .mat-form-field-infix {
+      padding: 0 !important;
+      border: none !important;
+
+      .mat_input_close {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        button.mat-icon-button {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+      .mat-input-element {
+        border: 1px solid;
+        border-color: #ddd;
+        margin: 0 !important;
+        height: 40px;
+        padding: 0 16px;
+      }
+
+      .mat-form-field-label-wrapper {
+        top: 0;
+        padding: 0;
+
+        .mat-form-field-label {
+          margin: 0;
+          line-height: 40px;
+          top: auto !important;
+          left: 16px;
+          width: calc(100% - 16px);
+        }
+      }
+
+    }
+  }
+}
